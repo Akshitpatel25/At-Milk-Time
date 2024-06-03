@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'narziss';
+}
+
+:root {
+    --gradiant-color: linear-gradient(176deg, rgba(225, 194, 130, 1) 0%, rgb(158, 123, 59) 100%);
+    --gradiant-blackcolor: radial-gradient(circle, rgba(43, 39, 39, 0.644782913165266) 0%, rgba(0, 0, 0, 1) 100%);
+    --white: rgba(255, 255, 255, 0.15);
+}
+
+@font-face {
+    font-family: 'narziss';
+    src: url(/font/FontsFree-Net-Narziss1.ttf)
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+
+.login_page {
+    width: 50vw;
+    height: 80vh;
+    background: linear-gradient(176deg, rgba(225, 194, 130, 1) 0%, rgb(158, 123, 59) 100%);
+    filter: blur(10);
+    position: absolute;
+    z-index: 10;
+    border-radius: 15px;
+    padding: 10px;
+    transition: all 0.7s ease-in-out;
+}
+
+.login_signup {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.username {
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: 'Montserrat', Courier, monospace;
+}
+
+#email {
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: 'Montserrat', Courier, monospace;
+}
+
+#password {
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: 'Montserrat', Courier, monospace;
+}
+
+#phone {
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: 'Montserrat', Courier, monospace;
+}
+
+#address {
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: 'Montserrat', Courier, monospace;
+}
+
+.singup_msg {
+    cursor: pointer;
+}
+
+.sign_button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat', Courier, monospace;
+}
+
+.sign_button:hover {
+    background-color: rgb(229, 222, 222);
+}
+
+.signup_part {
+    width: 50%;
+    position: absolute;
+    border-radius: 25px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+/* ---------------- responsive -------------------- */
+@media (max-width : 1280px) {
+    .login_page {
+        width: 60vw;
+    }
+}
+
+@media (max-width : 1024px) {
+    .login_page {
+        width: 70vw;
+    }
+}
+
+@media (max-width : 850px) {
+    .login_page {
+        width: 80vw;
+    }
+}
+
+@media (max-width : 710px) {
+    .login_page {
+        width: 80vw;
+    }
+
+    .login_part {
+        width: 60%;
+    }
+
+    .signup_part {
+        width: 60%;
+    }
+}
+
+@media (max-width : 600px) {
+    .login_page {
+        width: 80vw;
+    }
+
+    .login_part {
+        width: 70%;
+    }
+
+    .signup_part {
+        width: 70%;
+    }
+}
+
+@media (max-width : 430px) {
+    .login_page {
+        width: 80vw;
+    }
+
+    .login_part {
+        width: 85%;
+        padding: 10px;
+    }
+
+    .signup_part {
+        width: 85%;
+        padding: 10px;
+    }
+}
+
+@media (max-width : 300px) {
+    .login_page {
+        width: 90vw;
+    }
+
+    .login_part {
+        width: 90%;
+        padding: 6px;
+    }
+
+    .signup_part {
+        width: 90%;
+        padding: 6px;
+    }
+}
